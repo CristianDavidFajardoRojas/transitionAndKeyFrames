@@ -13,7 +13,7 @@ body {
 
 .cloud {
     width: 8VW;
-    height: 11VH;
+    height: 11.2VH;
     background-image: url('storage/nube.png'); 
     background-size: cover;
     position: absolute;
@@ -40,19 +40,19 @@ body {
   .rain {
     position: absolute;
     right: 49%;
-    width: 5%;
+    width: 6%;
     height: 5%;
     background-image: url('storage/gotas.png');
     background-size: contain;
     background-repeat: repeat;
-    animation: rainFall 10s linear forwards;
+    animation: rainFall 7s linear forwards;
   }
   
   @keyframes rainFall {
     0% {
         transform: translateY(-200%);
       }
-    60% {
+    80% {
       transform: translateY(-200%);
     }
     100% {
@@ -68,14 +68,14 @@ body {
     background-image: url('storage/gotas.png');
     background-size: contain;
     background-repeat: repeat;
-    animation: rainFall 11s linear forwards;
+    animation: rainFall 8s linear forwards;
   }
   
   @keyframes rainFall {
     0% {
         transform: translateY(-200%);
       }
-    60% {
+    80% {
       transform: translateY(-200%);
     }
     100% {
@@ -105,3 +105,24 @@ body {
       transform: translateY(200%);
     }
   }
+
+  .message {
+    position: absolute;
+    right: 42%;
+    top: 30%;
+
+    animation: message 14s linear forwards;
+  }
+  
+  @keyframes message {
+    0% {
+        font-size: 0.0em;
+      }
+    95% {
+        font-size: 0.0em;
+    }
+    100% {
+        font-size: 2em;
+    }
+  }
+  
