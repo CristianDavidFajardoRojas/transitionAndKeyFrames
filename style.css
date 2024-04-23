@@ -26,7 +26,7 @@ body {
     0% {
       right: -100px; 
     }
-    50% {
+    40% {
       right: calc(50% - 50px); 
     }
     75% {
@@ -39,7 +39,7 @@ body {
 
   .rain {
     position: absolute;
-    right: 50%;
+    right: 49%;
     width: 5%;
     height: 5%;
     background-image: url('storage/gotas.png');
@@ -62,7 +62,7 @@ body {
 
   .rain2 {
     position: absolute;
-    right: 50%;
+    right: 48%;
     width: 5%;
     height: 5%;
     background-image: url('storage/gotas.png');
@@ -85,23 +85,23 @@ body {
 
   .flower {
     position: absolute;
-    right: 50%;
-    width: 5%;
-    height: 5%;
-    background-image: url('storage/gotas.png');
+    right: 35%;
+    width: 25%;
+    height: 25%;
+    background-image: url('storage/flor.png');
     background-size: contain;
-    background-repeat: repeat;
-    animation: rainFall 11s linear forwards;
+    background-repeat: no-repeat;
+    animation: floweeer 12s linear forwards;
   }
   
-  @keyframes rainFall {
+  @keyframes floweeer {
     0% {
-        transform: translateY(-200%);
+        transform: translateY(2000%);
       }
     60% {
-      transform: translateY(-200%);
+      transform: translateY(2000%);
     }
     100% {
-      transform: translateY(2000%);
+      transform: translateY(200%);
     }
   }
