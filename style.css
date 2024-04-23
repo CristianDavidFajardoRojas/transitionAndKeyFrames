@@ -1,0 +1,38 @@
+body {
+    background-image: url(storage/imagenfondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sun {
+    position: absolute;
+    right: 10%;
+    width: 10vw;
+    height: 20vh;
+}
+
+.cloud {
+    width: 8VW;
+    height: 11VH;
+    background-image: url('storage/nube.png'); 
+    background-size: cover;
+    position: absolute;
+    top: 5%;
+    right: -100px; 
+    animation: moveCloud 10s linear forwards; 
+}
+
+  @keyframes moveCloud {
+    0% {
+      right: -100px; 
+    }
+    50% {
+      right: calc(50% - 50px); 
+    }
+    75% {
+      right: calc(50% - 50px); 
+    }
+    100% {
+      right: calc(0% - -2000px); 
+    }
+  }
