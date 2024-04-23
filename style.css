@@ -17,7 +17,7 @@ body {
     background-image: url('storage/nube.png'); 
     background-size: cover;
     position: absolute;
-    top: 5%;
+    top: 0;
     right: -100px; 
     animation: moveCloud 10s linear forwards; 
 }
@@ -34,5 +34,74 @@ body {
     }
     100% {
       right: calc(0% - -2000px); 
+    }
+  }
+
+  .rain {
+    position: absolute;
+    right: 50%;
+    width: 5%;
+    height: 5%;
+    background-image: url('storage/gotas.png');
+    background-size: contain;
+    background-repeat: repeat;
+    animation: rainFall 10s linear forwards;
+  }
+  
+  @keyframes rainFall {
+    0% {
+        transform: translateY(-200%);
+      }
+    60% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(2000%);
+    }
+  }
+
+  .rain2 {
+    position: absolute;
+    right: 50%;
+    width: 5%;
+    height: 5%;
+    background-image: url('storage/gotas.png');
+    background-size: contain;
+    background-repeat: repeat;
+    animation: rainFall 11s linear forwards;
+  }
+  
+  @keyframes rainFall {
+    0% {
+        transform: translateY(-200%);
+      }
+    60% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(2000%);
+    }
+  }
+
+  .flower {
+    position: absolute;
+    right: 50%;
+    width: 5%;
+    height: 5%;
+    background-image: url('storage/gotas.png');
+    background-size: contain;
+    background-repeat: repeat;
+    animation: rainFall 11s linear forwards;
+  }
+  
+  @keyframes rainFall {
+    0% {
+        transform: translateY(-200%);
+      }
+    60% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(2000%);
     }
   }
